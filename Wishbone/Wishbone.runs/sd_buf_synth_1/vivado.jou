@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu May 20 18:06:49 2021
+# Process ID: 4876
+# Current directory: G:/document/semester6/ComputerSystemExperiment/Wishbone/Wishbone.runs/sd_buf_synth_1
+# Command line: vivado.exe -log sd_buf.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source sd_buf.tcl
+# Log file: G:/document/semester6/ComputerSystemExperiment/Wishbone/Wishbone.runs/sd_buf_synth_1/sd_buf.vds
+# Journal file: G:/document/semester6/ComputerSystemExperiment/Wishbone/Wishbone.runs/sd_buf_synth_1\vivado.jou
+#-----------------------------------------------------------
+source sd_buf.tcl -notrace

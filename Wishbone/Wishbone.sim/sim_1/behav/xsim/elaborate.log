@@ -1,0 +1,78 @@
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: M:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto d5139156fa0344ea95f2a08c5dd701d0 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot cpu_test_behav xil_defaultlib.cpu_test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=32.0,...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.clk_wiz_5MHZ_clk_wiz
+Compiling module xil_defaultlib.clk_wiz_5MHZ
+Compiling module xil_defaultlib.Ansynchronous
+Compiling module xil_defaultlib.pcreg(initvalue=32'b011000000000...
+Compiling module xil_defaultlib.npc
+Compiling module xil_defaultlib.mux_pc
+Compiling module xil_defaultlib.PipeIF
+Compiling module xil_defaultlib.PipeIR
+Compiling module xil_defaultlib.decoder
+Compiling module xil_defaultlib.predictor
+Compiling module xil_defaultlib.cu
+Compiling module xil_defaultlib.direct
+Compiling module xil_defaultlib.pcreg
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.extend5
+Compiling module xil_defaultlib.extend16
+Compiling module xil_defaultlib.extend18
+Compiling module xil_defaultlib.ADD
+Compiling module xil_defaultlib.ii
+Compiling module xil_defaultlib.cp0
+Compiling module xil_defaultlib.LLbit_reg
+Compiling module xil_defaultlib.PipeID
+Compiling module xil_defaultlib.PipeDEreg
+Compiling module xil_defaultlib.mux_alu
+Compiling module xil_defaultlib.ADDU
+Compiling module xil_defaultlib.SUBU
+Compiling module xil_defaultlib.SUB
+Compiling module xil_defaultlib.AND
+Compiling module xil_defaultlib.OR
+Compiling module xil_defaultlib.XOR
+Compiling module xil_defaultlib.NOR
+Compiling module xil_defaultlib.LUI
+Compiling module xil_defaultlib.SLT
+Compiling module xil_defaultlib.SLTU
+Compiling module xil_defaultlib.SRA
+Compiling module xil_defaultlib.SLLSLR
+Compiling module xil_defaultlib.SRL
+Compiling module xil_defaultlib.alu_selector
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.complement32
+Compiling module xil_defaultlib.multu
+Compiling module xil_defaultlib.complement64
+Compiling module xil_defaultlib.mult
+Compiling module xil_defaultlib.divu
+Compiling module xil_defaultlib.div
+Compiling module xil_defaultlib.clz
+Compiling module xil_defaultlib.clo
+Compiling module xil_defaultlib.mux_rf
+Compiling module xil_defaultlib.mux_hi
+Compiling module xil_defaultlib.mux_lo
+Compiling module xil_defaultlib.hi_lo_function
+Compiling module xil_defaultlib.extend1
+Compiling module xil_defaultlib.mux2_32
+Compiling module xil_defaultlib.PipeEXE
+Compiling module xil_defaultlib.PipeEMreg
+Compiling module xil_defaultlib.cpmem
+Compiling module xil_defaultlib.extend8
+Compiling module xil_defaultlib.PipeMEM
+Compiling module xil_defaultlib.PipeMWreg
+Compiling module xil_defaultlib.PipeWB
+Compiling module xil_defaultlib.cpu
+Compiling module xil_defaultlib.cpu_top
+Compiling module xil_defaultlib.cpu_test
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot cpu_test_behav

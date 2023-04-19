@@ -1,0 +1,2 @@
+sd_buf.v,verilog,xil_defaultlib,../../../../Wishbone.gen/sources_1/ip/sd_buf/sim/sd_buf.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

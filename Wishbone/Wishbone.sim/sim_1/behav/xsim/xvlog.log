@@ -1,0 +1,99 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/document/semester6/ComputerSystemExperiment/Wishbone/Wishbone.gen/sources_1/ip/clk_wiz_5MHZ/clk_wiz_5MHZ_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_5MHZ_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/document/semester6/ComputerSystemExperiment/Wishbone/Wishbone.gen/sources_1/ip/clk_wiz_5MHZ/clk_wiz_5MHZ.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_5MHZ
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/document/semester6/ComputerSystemExperiment/Wishbone/Wishbone.srcs/sources_1/new/cpu/Asynchronous_D_FF.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Ansynchronous
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/document/semester6/ComputerSystemExperiment/Wishbone/Wishbone.srcs/sources_1/new/cpu/II.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ii
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/document/semester6/ComputerSystemExperiment/Wishbone/Wishbone.srcs/sources_1/new/cpu/LLbit_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LLbit_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/document/semester6/ComputerSystemExperiment/Wishbone/Wishbone.srcs/sources_1/new/cpu/PipeDEreg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PipeDEreg
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/document/semester6/ComputerSystemExperiment/Wishbone/Wishbone.srcs/sources_1/new/cpu/PipeEMreg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PipeEMreg
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/document/semester6/ComputerSystemExperiment/Wishbone/Wishbone.srcs/sources_1/new/cpu/PipeEXE.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PipeEXE
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/document/semester6/ComputerSystemExperiment/Wishbone/Wishbone.srcs/sources_1/new/cpu/PipeID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PipeID
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/document/semester6/ComputerSystemExperiment/Wishbone/Wishbone.srcs/sources_1/new/cpu/PipeIF.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PipeIF
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/document/semester6/ComputerSystemExperiment/Wishbone/Wishbone.srcs/sources_1/new/cpu/PipeIR.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PipeIR
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/document/semester6/ComputerSystemExperiment/Wishbone/Wishbone.srcs/sources_1/new/cpu/PipeMEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PipeMEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/document/semester6/ComputerSystemExperiment/Wishbone/Wishbone.srcs/sources_1/new/cpu/PipeMWreg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PipeMWreg
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/document/semester6/ComputerSystemExperiment/Wishbone/Wishbone.srcs/sources_1/new/cpu/PipeWB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PipeWB
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/document/semester6/ComputerSystemExperiment/Wishbone/Wishbone.srcs/sources_1/new/cpu/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-311] analyzing module ADDU
+INFO: [VRFC 10-311] analyzing module ADD
+INFO: [VRFC 10-311] analyzing module SUBU
+INFO: [VRFC 10-311] analyzing module SUB
+INFO: [VRFC 10-311] analyzing module AND
+INFO: [VRFC 10-311] analyzing module OR
+INFO: [VRFC 10-311] analyzing module XOR
+INFO: [VRFC 10-311] analyzing module NOR
+INFO: [VRFC 10-311] analyzing module LUI
+INFO: [VRFC 10-311] analyzing module SLT
+INFO: [VRFC 10-311] analyzing module SLTU
+INFO: [VRFC 10-311] analyzing module SRA
+INFO: [VRFC 10-311] analyzing module SLLSLR
+INFO: [VRFC 10-311] analyzing module SRL
+INFO: [VRFC 10-311] analyzing module alu_selector
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/document/semester6/ComputerSystemExperiment/Wishbone/Wishbone.srcs/sources_1/new/cpu/clo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clo
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/document/semester6/ComputerSystemExperiment/Wishbone/Wishbone.srcs/sources_1/new/cpu/clz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clz
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/document/semester6/ComputerSystemExperiment/Wishbone/Wishbone.srcs/sources_1/new/cpu/complement.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module complement32
+INFO: [VRFC 10-311] analyzing module complement64
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/document/semester6/ComputerSystemExperiment/Wishbone/Wishbone.srcs/sources_1/new/cpu/cp0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cp0
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/document/semester6/ComputerSystemExperiment/Wishbone/Wishbone.srcs/sources_1/new/cpu/cpmem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpmem
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/document/semester6/ComputerSystemExperiment/Wishbone/Wishbone.srcs/sources_1/new/cpu/cpu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/document/semester6/ComputerSystemExperiment/Wishbone/Wishbone.srcs/sources_1/new/cpu/cpu_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/document/semester6/ComputerSystemExperiment/Wishbone/Wishbone.srcs/sources_1/new/cpu/cu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cu
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/document/semester6/ComputerSystemExperiment/Wishbone/Wishbone.srcs/sources_1/new/cpu/decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder
+INFO: [VRFC 10-2458] undeclared symbol base, assumed default net type wire [G:/document/semester6/ComputerSystemExperiment/Wishbone/Wishbone.srcs/sources_1/new/cpu/decoder.v:18]
+INFO: [VRFC 10-2458] undeclared symbol offset, assumed default net type wire [G:/document/semester6/ComputerSystemExperiment/Wishbone/Wishbone.srcs/sources_1/new/cpu/decoder.v:19]
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/document/semester6/ComputerSystemExperiment/Wishbone/Wishbone.srcs/sources_1/new/cpu/direct.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module direct
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/document/semester6/ComputerSystemExperiment/Wishbone/Wishbone.srcs/sources_1/new/cpu/div.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module div
+INFO: [VRFC 10-311] analyzing module divu
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/document/semester6/ComputerSystemExperiment/Wishbone/Wishbone.srcs/sources_1/new/cpu/extend.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module extend1
+INFO: [VRFC 10-311] analyzing module extend5
+INFO: [VRFC 10-311] analyzing module extend8
+INFO: [VRFC 10-311] analyzing module extend16
+INFO: [VRFC 10-311] analyzing module extend18
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/document/semester6/ComputerSystemExperiment/Wishbone/Wishbone.srcs/sources_1/new/cpu/hi_lo_function.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hi_lo_function
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/document/semester6/ComputerSystemExperiment/Wishbone/Wishbone.srcs/sources_1/new/cpu/mult.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mult
+INFO: [VRFC 10-311] analyzing module multu
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/document/semester6/ComputerSystemExperiment/Wishbone/Wishbone.srcs/sources_1/new/cpu/mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux_pc
+INFO: [VRFC 10-311] analyzing module mux_rf
+INFO: [VRFC 10-311] analyzing module mux_alu
+INFO: [VRFC 10-311] analyzing module mux_hi
+INFO: [VRFC 10-311] analyzing module mux_lo
+INFO: [VRFC 10-311] analyzing module mux2_32
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/document/semester6/ComputerSystemExperiment/Wishbone/Wishbone.srcs/sources_1/new/cpu/npc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module npc
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/document/semester6/ComputerSystemExperiment/Wishbone/Wishbone.srcs/sources_1/new/cpu/pcreg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pcreg
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/document/semester6/ComputerSystemExperiment/Wishbone/Wishbone.srcs/sources_1/new/cpu/predictor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module predictor
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/document/semester6/ComputerSystemExperiment/Wishbone/Wishbone.srcs/sources_1/new/cpu/regfile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-2263] Analyzing Verilog file "G:/document/semester6/ComputerSystemExperiment/Wishbone/Wishbone.srcs/sim_1/new/cpu_test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu_test

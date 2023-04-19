@@ -1,0 +1,16 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../Wishbone.srcs/sources_1/new/wb_conmax_arb.v" \
+"../../../../Wishbone.srcs/sources_1/new/wb_conmax_master_if.v" \
+"../../../../Wishbone.srcs/sources_1/new/wb_conmax_msel.v" \
+"../../../../Wishbone.srcs/sources_1/new/wb_conmax_pri_dec.v" \
+"../../../../Wishbone.srcs/sources_1/new/wb_conmax_pri_enc.v" \
+"../../../../Wishbone.srcs/sources_1/new/wb_conmax_rf.v" \
+"../../../../Wishbone.srcs/sources_1/new/wb_conmax_slave_if.v" \
+"../../../../Wishbone.srcs/sources_1/new/wb_conmax_top.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

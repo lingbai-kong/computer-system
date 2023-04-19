@@ -1,0 +1,827 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Thu May 27 01:31:05 2021
+| Host         : kPC running 64-bit major release  (build 9200)
+| Command      : report_drc -file top_drc_routed.rpt -pb top_drc_routed.pb -rpx top_drc_routed.rpx
+| Design       : top
+| Device       : xc7a100tcsg324-1
+| Speed File   : -1
+| Design State : Fully Routed
+---------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 153
++-----------+----------+-----------------------------------------------------+------------+
+| Rule      | Severity | Description                                         | Violations |
++-----------+----------+-----------------------------------------------------+------------+
+| CFGBVS-1  | Warning  | Missing CFGBVS and CONFIG_VOLTAGE Design Properties | 1          |
+| PDRC-153  | Warning  | Gated clock check                                   | 145        |
+| PLCK-20   | Warning  | Clock Placer Checks                                 | 1          |
+| PLCK-23   | Warning  | Clock Placer Checks                                 | 1          |
+| REQP-1709 | Warning  | Clock output buffering                              | 1          |
+| RPBF-3    | Warning  | IO port buffering is incomplete                     | 4          |
++-----------+----------+-----------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+CFGBVS-1#1 Warning
+Missing CFGBVS and CONFIG_VOLTAGE Design Properties  
+Neither the CFGBVS nor CONFIG_VOLTAGE voltage property is set in the current_design.  Configuration bank voltage select (CFGBVS) must be set to VCCO or GND, and CONFIG_VOLTAGE must be set to the correct configuration voltage, in order to determine the I/O voltage support for the pins in bank 0.  It is suggested to specify these either using the 'Edit Device Properties' function in the GUI or directly in the XDC file using the following syntax:
+
+ set_property CFGBVS value1 [current_design]
+ #where value1 is either VCCO or GND
+
+ set_property CONFIG_VOLTAGE value2 [current_design]
+ #where value2 is the voltage provided to configuration bank 0
+
+Refer to the device configuration user guide for more information.
+Related violations: <none>
+
+PDRC-153#1 Warning
+Gated clock check  
+Net CPU/CPU/DEreg/D_alu_aluc_reg[0]_1 is a gated clock net sourced by a combinational pin CPU/CPU/DEreg/carry_reg_i_2/O, cell CPU/CPU/DEreg/carry_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#2 Warning
+Gated clock check  
+Net CPU/CPU/DEreg/D_branch_flag_reg[0]_0 is a gated clock net sourced by a combinational pin CPU/CPU/DEreg/branch_predict_success_reg_i_2/O, cell CPU/CPU/DEreg/branch_predict_success_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#3 Warning
+Gated clock check  
+Net CPU/CPU/DEreg/D_mux_rf_DMEM_reg_1[0] is a gated clock net sourced by a combinational pin CPU/CPU/DEreg/o_rdata1_reg[31]_i_2/O, cell CPU/CPU/DEreg/o_rdata1_reg[31]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#4 Warning
+Gated clock check  
+Net CPU/CPU/DEreg/E[0] is a gated clock net sourced by a combinational pin CPU/CPU/DEreg/out_reg[31]_i_2/O, cell CPU/CPU/DEreg/out_reg[31]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#5 Warning
+Gated clock check  
+Net CPU/CPU/EMreg/D_alu_out_reg[0]_0[0] is a gated clock net sourced by a combinational pin CPU/CPU/EMreg/rdata16_reg[15]_i_2/O, cell CPU/CPU/EMreg/rdata16_reg[15]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#6 Warning
+Gated clock check  
+Net CPU/CPU/EMreg/D_data_type_reg[0]_0[0] is a gated clock net sourced by a combinational pin CPU/CPU/EMreg/rdata8_reg[7]_i_2/O, cell CPU/CPU/EMreg/rdata8_reg[7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#7 Warning
+Gated clock check  
+Net CPU/CPU/EMreg/D_data_type_reg[1]_1[0] is a gated clock net sourced by a combinational pin CPU/CPU/EMreg/o_DMEM_rdata_reg[31]_i_2/O, cell CPU/CPU/EMreg/o_DMEM_rdata_reg[31]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#8 Warning
+Gated clock check  
+Net CPU/CPU/EMreg/D_data_type_reg[2]_0[0] is a gated clock net sourced by a combinational pin CPU/CPU/EMreg/rdata32_reg[31]_i_2/O, cell CPU/CPU/EMreg/rdata32_reg[31]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#9 Warning
+Gated clock check  
+Net CPU/CPU/EMreg/sw[3][0] is a gated clock net sourced by a combinational pin CPU/CPU/EMreg/show_data_reg[31]_i_2/O, cell CPU/CPU/EMreg/show_data_reg[31]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#10 Warning
+Gated clock check  
+Net CPU/CPU/ID/CONTROL_UNIT/exc_addr1 is a gated clock net sourced by a combinational pin CPU/CPU/ID/CONTROL_UNIT/int_reg_i_2/O, cell CPU/CPU/ID/CONTROL_UNIT/int_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#11 Warning
+Gated clock check  
+Net CPU/CPU/ID/DECODER/E[0] is a gated clock net sourced by a combinational pin CPU/CPU/ID/DECODER/DMEM_ena_reg_i_2/O, cell CPU/CPU/ID/DECODER/DMEM_ena_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#12 Warning
+Gated clock check  
+Net CPU/CPU/ID/DECODER/out_reg[7]_0[0] is a gated clock net sourced by a combinational pin CPU/CPU/ID/DECODER/mux_rf_reg[3]_i_2/O, cell CPU/CPU/ID/DECODER/mux_rf_reg[3]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#13 Warning
+Gated clock check  
+Net CPU/CPU/ID/DECODER/out_reg[7]_1[0] is a gated clock net sourced by a combinational pin CPU/CPU/ID/DECODER/cause_reg[3]_i_1/O, cell CPU/CPU/ID/DECODER/cause_reg[3]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#14 Warning
+Gated clock check  
+Net CPU/CPU/ID/DECODER/out_reg[7]_2[0] is a gated clock net sourced by a combinational pin CPU/CPU/ID/DECODER/mux_hi_reg[2]_i_2/O, cell CPU/CPU/ID/DECODER/mux_hi_reg[2]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#15 Warning
+Gated clock check  
+Net CPU/CPU/ID/DECODER/out_reg[7]_3 is a gated clock net sourced by a combinational pin CPU/CPU/ID/DECODER/EXT1_n_c_reg_i_2/O, cell CPU/CPU/ID/DECODER/EXT1_n_c_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#16 Warning
+Gated clock check  
+Net CPU/CPU/IR/E[0] is a gated clock net sourced by a combinational pin CPU/CPU/IR/out_reg[7]_i_2__1/O, cell CPU/CPU/IR/out_reg[7]_i_2__1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#17 Warning
+Gated clock check  
+Net DDR2/ddr_din_reg[0]_LDC_i_1_n_8 is a gated clock net sourced by a combinational pin DDR2/ddr_din_reg[0]_LDC_i_1/O, cell DDR2/ddr_din_reg[0]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#18 Warning
+Gated clock check  
+Net DDR2/ddr_din_reg[100]_LDC_i_1_n_8 is a gated clock net sourced by a combinational pin DDR2/ddr_din_reg[100]_LDC_i_1/O, cell DDR2/ddr_din_reg[100]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#19 Warning
+Gated clock check  
+Net DDR2/ddr_din_reg[101]_LDC_i_1_n_8 is a gated clock net sourced by a combinational pin DDR2/ddr_din_reg[101]_LDC_i_1/O, cell DDR2/ddr_din_reg[101]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#20 Warning
+Gated clock check  
+Net DDR2/ddr_din_reg[102]_LDC_i_1_n_8 is a gated clock net sourced by a combinational pin DDR2/ddr_din_reg[102]_LDC_i_1/O, cell DDR2/ddr_din_reg[102]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#21 Warning
+Gated clock check  
+Net DDR2/ddr_din_reg[103]_LDC_i_1_n_8 is a gated clock net sourced by a combinational pin DDR2/ddr_din_reg[103]_LDC_i_1/O, cell DDR2/ddr_din_reg[103]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#22 Warning
+Gated clock check  
+Net DDR2/ddr_din_reg[104]_LDC_i_1_n_8 is a gated clock net sourced by a combinational pin DDR2/ddr_din_reg[104]_LDC_i_1/O, cell DDR2/ddr_din_reg[104]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#23 Warning
+Gated clock check  
+Net DDR2/ddr_din_reg[105]_LDC_i_1_n_8 is a gated clock net sourced by a combinational pin DDR2/ddr_din_reg[105]_LDC_i_1/O, cell DDR2/ddr_din_reg[105]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#24 Warning
+Gated clock check  
+Net DDR2/ddr_din_reg[106]_LDC_i_1_n_8 is a gated clock net sourced by a combinational pin DDR2/ddr_din_reg[106]_LDC_i_1/O, cell DDR2/ddr_din_reg[106]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#25 Warning
+Gated clock check  
+Net DDR2/ddr_din_reg[107]_LDC_i_1_n_8 is a gated clock net sourced by a combinational pin DDR2/ddr_din_reg[107]_LDC_i_1/O, cell DDR2/ddr_din_reg[107]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#26 Warning
+Gated clock check  
+Net DDR2/ddr_din_reg[108]_LDC_i_1_n_8 is a gated clock net sourced by a combinational pin DDR2/ddr_din_reg[108]_LDC_i_1/O, cell DDR2/ddr_din_reg[108]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#27 Warning
+Gated clock check  
+Net DDR2/ddr_din_reg[109]_LDC_i_1_n_8 is a gated clock net sourced by a combinational pin DDR2/ddr_din_reg[109]_LDC_i_1/O, cell DDR2/ddr_din_reg[109]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#28 Warning
+Gated clock check  
+Net DDR2/ddr_din_reg[10]_LDC_i_1_n_8 is a gated clock net sourced by a combinational pin DDR2/ddr_din_reg[10]_LDC_i_1/O, cell DDR2/ddr_din_reg[10]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#29 Warning
+Gated clock check  
+Net DDR2/ddr_din_reg[110]_LDC_i_1_n_8 is a gated clock net sourced by a combinational pin DDR2/ddr_din_reg[110]_LDC_i_1/O, cell DDR2/ddr_din_reg[110]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#30 Warning
+Gated clock check  
+Net DDR2/ddr_din_reg[111]_LDC_i_1_n_8 is a gated clock net sourced by a combinational pin DDR2/ddr_din_reg[111]_LDC_i_1/O, cell DDR2/ddr_din_reg[111]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#31 Warning
+Gated clock check  
+Net DDR2/ddr_din_reg[112]_LDC_i_1_n_8 is a gated clock net sourced by a combinational pin DDR2/ddr_din_reg[112]_LDC_i_1/O, cell DDR2/ddr_din_reg[112]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#32 Warning
+Gated clock check  
+Net DDR2/ddr_din_reg[113]_LDC_i_1_n_8 is a gated clock net sourced by a combinational pin DDR2/ddr_din_reg[113]_LDC_i_1/O, cell DDR2/ddr_din_reg[113]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#33 Warning
+Gated clock check  
+Net DDR2/ddr_din_reg[114]_LDC_i_1_n_8 is a gated clock net sourced by a combinational pin DDR2/ddr_din_reg[114]_LDC_i_1/O, cell DDR2/ddr_din_reg[114]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#34 Warning
+Gated clock check  
+Net DDR2/ddr_din_reg[115]_LDC_i_1_n_8 is a gated clock net sourced by a combinational pin DDR2/ddr_din_reg[115]_LDC_i_1/O, cell DDR2/ddr_din_reg[115]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#35 Warning
+Gated clock check  
+Net DDR2/ddr_din_reg[116]_LDC_i_1_n_8 is a gated clock net sourced by a combinational pin DDR2/ddr_din_reg[116]_LDC_i_1/O, cell DDR2/ddr_din_reg[116]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#36 Warning
+Gated clock check  
+Net DDR2/ddr_din_reg[117]_LDC_i_1_n_8 is a gated clock net sourced by a combinational pin DDR2/ddr_din_reg[117]_LDC_i_1/O, cell DDR2/ddr_din_reg[117]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#37 Warning
+Gated clock check  
+Net DDR2/ddr_din_reg[118]_LDC_i_1_n_8 is a gated clock net sourced by a combinational pin DDR2/ddr_din_reg[118]_LDC_i_1/O, cell DDR2/ddr_din_reg[118]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#38 Warning
+Gated clock check  
+Net DDR2/ddr_din_reg[119]_LDC_i_1_n_8 is a gated clock net sourced by a combinational pin DDR2/ddr_din_reg[119]_LDC_i_1/O, cell DDR2/ddr_din_reg[119]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#39 Warning
+Gated clock check  
+Net DDR2/ddr_din_reg[11]_LDC_i_1_n_8 is a gated clock net sourced by a combinational pin DDR2/ddr_din_reg[11]_LDC_i_1/O, cell DDR2/ddr_din_reg[11]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#40 Warning
+Gated clock check  
+Net DDR2/ddr_din_reg[120]_LDC_i_1_n_8 is a gated clock net sourced by a combinational pin DDR2/ddr_din_reg[120]_LDC_i_1/O, cell DDR2/ddr_din_reg[120]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#41 Warning
+Gated clock check  
+Net DDR2/ddr_din_reg[121]_LDC_i_1_n_8 is a gated clock net sourced by a combinational pin DDR2/ddr_din_reg[121]_LDC_i_1/O, cell DDR2/ddr_din_reg[121]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#42 Warning
+Gated clock check  
+Net DDR2/ddr_din_reg[122]_LDC_i_1_n_8 is a gated clock net sourced by a combinational pin DDR2/ddr_din_reg[122]_LDC_i_1/O, cell DDR2/ddr_din_reg[122]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#43 Warning
+Gated clock check  
+Net DDR2/ddr_din_reg[123]_LDC_i_1_n_8 is a gated clock net sourced by a combinational pin DDR2/ddr_din_reg[123]_LDC_i_1/O, cell DDR2/ddr_din_reg[123]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#44 Warning
+Gated clock check  
+Net DDR2/ddr_din_reg[124]_LDC_i_1_n_8 is a gated clock net sourced by a combinational pin DDR2/ddr_din_reg[124]_LDC_i_1/O, cell DDR2/ddr_din_reg[124]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#45 Warning
+Gated clock check  
+Net DDR2/ddr_din_reg[125]_LDC_i_1_n_8 is a gated clock net sourced by a combinational pin DDR2/ddr_din_reg[125]_LDC_i_1/O, cell DDR2/ddr_din_reg[125]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#46 Warning
+Gated clock check  
+Net DDR2/ddr_din_reg[126]_LDC_i_1_n_8 is a gated clock net sourced by a combinational pin DDR2/ddr_din_reg[126]_LDC_i_1/O, cell DDR2/ddr_din_reg[126]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#47 Warning
+Gated clock check  
+Net DDR2/ddr_din_reg[127]_LDC_i_1_n_8 is a gated clock net sourced by a combinational pin DDR2/ddr_din_reg[127]_LDC_i_1/O, cell DDR2/ddr_din_reg[127]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#48 Warning
+Gated clock check  
+Net DDR2/ddr_din_reg[12]_LDC_i_1_n_8 is a gated clock net sourced by a combinational pin DDR2/ddr_din_reg[12]_LDC_i_1/O, cell DDR2/ddr_din_reg[12]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#49 Warning
+Gated clock check  
+Net DDR2/ddr_din_reg[13]_LDC_i_1_n_8 is a gated clock net sourced by a combinational pin DDR2/ddr_din_reg[13]_LDC_i_1/O, cell DDR2/ddr_din_reg[13]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#50 Warning
+Gated clock check  
+Net DDR2/ddr_din_reg[14]_LDC_i_1_n_8 is a gated clock net sourced by a combinational pin DDR2/ddr_din_reg[14]_LDC_i_1/O, cell DDR2/ddr_din_reg[14]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#51 Warning
+Gated clock check  
+Net DDR2/ddr_din_reg[15]_LDC_i_1_n_8 is a gated clock net sourced by a combinational pin DDR2/ddr_din_reg[15]_LDC_i_1/O, cell DDR2/ddr_din_reg[15]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#52 Warning
+Gated clock check  
+Net DDR2/ddr_din_reg[16]_LDC_i_1_n_8 is a gated clock net sourced by a combinational pin DDR2/ddr_din_reg[16]_LDC_i_1/O, cell DDR2/ddr_din_reg[16]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#53 Warning
+Gated clock check  
+Net DDR2/ddr_din_reg[17]_LDC_i_1_n_8 is a gated clock net sourced by a combinational pin DDR2/ddr_din_reg[17]_LDC_i_1/O, cell DDR2/ddr_din_reg[17]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#54 Warning
+Gated clock check  
+Net DDR2/ddr_din_reg[18]_LDC_i_1_n_8 is a gated clock net sourced by a combinational pin DDR2/ddr_din_reg[18]_LDC_i_1/O, cell DDR2/ddr_din_reg[18]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#55 Warning
+Gated clock check  
+Net DDR2/ddr_din_reg[19]_LDC_i_1_n_8 is a gated clock net sourced by a combinational pin DDR2/ddr_din_reg[19]_LDC_i_1/O, cell DDR2/ddr_din_reg[19]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#56 Warning
+Gated clock check  
+Net DDR2/ddr_din_reg[1]_LDC_i_1_n_8 is a gated clock net sourced by a combinational pin DDR2/ddr_din_reg[1]_LDC_i_1/O, cell DDR2/ddr_din_reg[1]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#57 Warning
+Gated clock check  
+Net DDR2/ddr_din_reg[20]_LDC_i_1_n_8 is a gated clock net sourced by a combinational pin DDR2/ddr_din_reg[20]_LDC_i_1/O, cell DDR2/ddr_din_reg[20]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#58 Warning
+Gated clock check  
+Net DDR2/ddr_din_reg[21]_LDC_i_1_n_8 is a gated clock net sourced by a combinational pin DDR2/ddr_din_reg[21]_LDC_i_1/O, cell DDR2/ddr_din_reg[21]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#59 Warning
+Gated clock check  
+Net DDR2/ddr_din_reg[22]_LDC_i_1_n_8 is a gated clock net sourced by a combinational pin DDR2/ddr_din_reg[22]_LDC_i_1/O, cell DDR2/ddr_din_reg[22]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#60 Warning
+Gated clock check  
+Net DDR2/ddr_din_reg[23]_LDC_i_1_n_8 is a gated clock net sourced by a combinational pin DDR2/ddr_din_reg[23]_LDC_i_1/O, cell DDR2/ddr_din_reg[23]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#61 Warning
+Gated clock check  
+Net DDR2/ddr_din_reg[24]_LDC_i_1_n_8 is a gated clock net sourced by a combinational pin DDR2/ddr_din_reg[24]_LDC_i_1/O, cell DDR2/ddr_din_reg[24]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#62 Warning
+Gated clock check  
+Net DDR2/ddr_din_reg[25]_LDC_i_1_n_8 is a gated clock net sourced by a combinational pin DDR2/ddr_din_reg[25]_LDC_i_1/O, cell DDR2/ddr_din_reg[25]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#63 Warning
+Gated clock check  
+Net DDR2/ddr_din_reg[26]_LDC_i_1_n_8 is a gated clock net sourced by a combinational pin DDR2/ddr_din_reg[26]_LDC_i_1/O, cell DDR2/ddr_din_reg[26]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#64 Warning
+Gated clock check  
+Net DDR2/ddr_din_reg[27]_LDC_i_1_n_8 is a gated clock net sourced by a combinational pin DDR2/ddr_din_reg[27]_LDC_i_1/O, cell DDR2/ddr_din_reg[27]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#65 Warning
+Gated clock check  
+Net DDR2/ddr_din_reg[28]_LDC_i_1_n_8 is a gated clock net sourced by a combinational pin DDR2/ddr_din_reg[28]_LDC_i_1/O, cell DDR2/ddr_din_reg[28]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#66 Warning
+Gated clock check  
+Net DDR2/ddr_din_reg[29]_LDC_i_1_n_8 is a gated clock net sourced by a combinational pin DDR2/ddr_din_reg[29]_LDC_i_1/O, cell DDR2/ddr_din_reg[29]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#67 Warning
+Gated clock check  
+Net DDR2/ddr_din_reg[2]_LDC_i_1_n_8 is a gated clock net sourced by a combinational pin DDR2/ddr_din_reg[2]_LDC_i_1/O, cell DDR2/ddr_din_reg[2]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#68 Warning
+Gated clock check  
+Net DDR2/ddr_din_reg[30]_LDC_i_1_n_8 is a gated clock net sourced by a combinational pin DDR2/ddr_din_reg[30]_LDC_i_1/O, cell DDR2/ddr_din_reg[30]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#69 Warning
+Gated clock check  
+Net DDR2/ddr_din_reg[31]_LDC_i_1_n_8 is a gated clock net sourced by a combinational pin DDR2/ddr_din_reg[31]_LDC_i_1/O, cell DDR2/ddr_din_reg[31]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#70 Warning
+Gated clock check  
+Net DDR2/ddr_din_reg[32]_LDC_i_1_n_8 is a gated clock net sourced by a combinational pin DDR2/ddr_din_reg[32]_LDC_i_1/O, cell DDR2/ddr_din_reg[32]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#71 Warning
+Gated clock check  
+Net DDR2/ddr_din_reg[33]_LDC_i_1_n_8 is a gated clock net sourced by a combinational pin DDR2/ddr_din_reg[33]_LDC_i_1/O, cell DDR2/ddr_din_reg[33]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#72 Warning
+Gated clock check  
+Net DDR2/ddr_din_reg[34]_LDC_i_1_n_8 is a gated clock net sourced by a combinational pin DDR2/ddr_din_reg[34]_LDC_i_1/O, cell DDR2/ddr_din_reg[34]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#73 Warning
+Gated clock check  
+Net DDR2/ddr_din_reg[35]_LDC_i_1_n_8 is a gated clock net sourced by a combinational pin DDR2/ddr_din_reg[35]_LDC_i_1/O, cell DDR2/ddr_din_reg[35]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#74 Warning
+Gated clock check  
+Net DDR2/ddr_din_reg[36]_LDC_i_1_n_8 is a gated clock net sourced by a combinational pin DDR2/ddr_din_reg[36]_LDC_i_1/O, cell DDR2/ddr_din_reg[36]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#75 Warning
+Gated clock check  
+Net DDR2/ddr_din_reg[37]_LDC_i_1_n_8 is a gated clock net sourced by a combinational pin DDR2/ddr_din_reg[37]_LDC_i_1/O, cell DDR2/ddr_din_reg[37]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#76 Warning
+Gated clock check  
+Net DDR2/ddr_din_reg[38]_LDC_i_1_n_8 is a gated clock net sourced by a combinational pin DDR2/ddr_din_reg[38]_LDC_i_1/O, cell DDR2/ddr_din_reg[38]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#77 Warning
+Gated clock check  
+Net DDR2/ddr_din_reg[39]_LDC_i_1_n_8 is a gated clock net sourced by a combinational pin DDR2/ddr_din_reg[39]_LDC_i_1/O, cell DDR2/ddr_din_reg[39]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#78 Warning
+Gated clock check  
+Net DDR2/ddr_din_reg[3]_LDC_i_1_n_8 is a gated clock net sourced by a combinational pin DDR2/ddr_din_reg[3]_LDC_i_1/O, cell DDR2/ddr_din_reg[3]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#79 Warning
+Gated clock check  
+Net DDR2/ddr_din_reg[40]_LDC_i_1_n_8 is a gated clock net sourced by a combinational pin DDR2/ddr_din_reg[40]_LDC_i_1/O, cell DDR2/ddr_din_reg[40]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#80 Warning
+Gated clock check  
+Net DDR2/ddr_din_reg[41]_LDC_i_1_n_8 is a gated clock net sourced by a combinational pin DDR2/ddr_din_reg[41]_LDC_i_1/O, cell DDR2/ddr_din_reg[41]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#81 Warning
+Gated clock check  
+Net DDR2/ddr_din_reg[42]_LDC_i_1_n_8 is a gated clock net sourced by a combinational pin DDR2/ddr_din_reg[42]_LDC_i_1/O, cell DDR2/ddr_din_reg[42]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#82 Warning
+Gated clock check  
+Net DDR2/ddr_din_reg[43]_LDC_i_1_n_8 is a gated clock net sourced by a combinational pin DDR2/ddr_din_reg[43]_LDC_i_1/O, cell DDR2/ddr_din_reg[43]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#83 Warning
+Gated clock check  
+Net DDR2/ddr_din_reg[44]_LDC_i_1_n_8 is a gated clock net sourced by a combinational pin DDR2/ddr_din_reg[44]_LDC_i_1/O, cell DDR2/ddr_din_reg[44]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#84 Warning
+Gated clock check  
+Net DDR2/ddr_din_reg[45]_LDC_i_1_n_8 is a gated clock net sourced by a combinational pin DDR2/ddr_din_reg[45]_LDC_i_1/O, cell DDR2/ddr_din_reg[45]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#85 Warning
+Gated clock check  
+Net DDR2/ddr_din_reg[46]_LDC_i_1_n_8 is a gated clock net sourced by a combinational pin DDR2/ddr_din_reg[46]_LDC_i_1/O, cell DDR2/ddr_din_reg[46]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#86 Warning
+Gated clock check  
+Net DDR2/ddr_din_reg[47]_LDC_i_1_n_8 is a gated clock net sourced by a combinational pin DDR2/ddr_din_reg[47]_LDC_i_1/O, cell DDR2/ddr_din_reg[47]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#87 Warning
+Gated clock check  
+Net DDR2/ddr_din_reg[48]_LDC_i_1_n_8 is a gated clock net sourced by a combinational pin DDR2/ddr_din_reg[48]_LDC_i_1/O, cell DDR2/ddr_din_reg[48]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#88 Warning
+Gated clock check  
+Net DDR2/ddr_din_reg[49]_LDC_i_1_n_8 is a gated clock net sourced by a combinational pin DDR2/ddr_din_reg[49]_LDC_i_1/O, cell DDR2/ddr_din_reg[49]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#89 Warning
+Gated clock check  
+Net DDR2/ddr_din_reg[4]_LDC_i_1_n_8 is a gated clock net sourced by a combinational pin DDR2/ddr_din_reg[4]_LDC_i_1/O, cell DDR2/ddr_din_reg[4]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#90 Warning
+Gated clock check  
+Net DDR2/ddr_din_reg[50]_LDC_i_1_n_8 is a gated clock net sourced by a combinational pin DDR2/ddr_din_reg[50]_LDC_i_1/O, cell DDR2/ddr_din_reg[50]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#91 Warning
+Gated clock check  
+Net DDR2/ddr_din_reg[51]_LDC_i_1_n_8 is a gated clock net sourced by a combinational pin DDR2/ddr_din_reg[51]_LDC_i_1/O, cell DDR2/ddr_din_reg[51]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#92 Warning
+Gated clock check  
+Net DDR2/ddr_din_reg[52]_LDC_i_1_n_8 is a gated clock net sourced by a combinational pin DDR2/ddr_din_reg[52]_LDC_i_1/O, cell DDR2/ddr_din_reg[52]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#93 Warning
+Gated clock check  
+Net DDR2/ddr_din_reg[53]_LDC_i_1_n_8 is a gated clock net sourced by a combinational pin DDR2/ddr_din_reg[53]_LDC_i_1/O, cell DDR2/ddr_din_reg[53]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#94 Warning
+Gated clock check  
+Net DDR2/ddr_din_reg[54]_LDC_i_1_n_8 is a gated clock net sourced by a combinational pin DDR2/ddr_din_reg[54]_LDC_i_1/O, cell DDR2/ddr_din_reg[54]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#95 Warning
+Gated clock check  
+Net DDR2/ddr_din_reg[55]_LDC_i_1_n_8 is a gated clock net sourced by a combinational pin DDR2/ddr_din_reg[55]_LDC_i_1/O, cell DDR2/ddr_din_reg[55]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#96 Warning
+Gated clock check  
+Net DDR2/ddr_din_reg[56]_LDC_i_1_n_8 is a gated clock net sourced by a combinational pin DDR2/ddr_din_reg[56]_LDC_i_1/O, cell DDR2/ddr_din_reg[56]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#97 Warning
+Gated clock check  
+Net DDR2/ddr_din_reg[57]_LDC_i_1_n_8 is a gated clock net sourced by a combinational pin DDR2/ddr_din_reg[57]_LDC_i_1/O, cell DDR2/ddr_din_reg[57]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#98 Warning
+Gated clock check  
+Net DDR2/ddr_din_reg[58]_LDC_i_1_n_8 is a gated clock net sourced by a combinational pin DDR2/ddr_din_reg[58]_LDC_i_1/O, cell DDR2/ddr_din_reg[58]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#99 Warning
+Gated clock check  
+Net DDR2/ddr_din_reg[59]_LDC_i_1_n_8 is a gated clock net sourced by a combinational pin DDR2/ddr_din_reg[59]_LDC_i_1/O, cell DDR2/ddr_din_reg[59]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#100 Warning
+Gated clock check  
+Net DDR2/ddr_din_reg[5]_LDC_i_1_n_8 is a gated clock net sourced by a combinational pin DDR2/ddr_din_reg[5]_LDC_i_1/O, cell DDR2/ddr_din_reg[5]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#101 Warning
+Gated clock check  
+Net DDR2/ddr_din_reg[60]_LDC_i_1_n_8 is a gated clock net sourced by a combinational pin DDR2/ddr_din_reg[60]_LDC_i_1/O, cell DDR2/ddr_din_reg[60]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#102 Warning
+Gated clock check  
+Net DDR2/ddr_din_reg[61]_LDC_i_1_n_8 is a gated clock net sourced by a combinational pin DDR2/ddr_din_reg[61]_LDC_i_1/O, cell DDR2/ddr_din_reg[61]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#103 Warning
+Gated clock check  
+Net DDR2/ddr_din_reg[62]_LDC_i_1_n_8 is a gated clock net sourced by a combinational pin DDR2/ddr_din_reg[62]_LDC_i_1/O, cell DDR2/ddr_din_reg[62]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#104 Warning
+Gated clock check  
+Net DDR2/ddr_din_reg[63]_LDC_i_1_n_8 is a gated clock net sourced by a combinational pin DDR2/ddr_din_reg[63]_LDC_i_1/O, cell DDR2/ddr_din_reg[63]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#105 Warning
+Gated clock check  
+Net DDR2/ddr_din_reg[64]_LDC_i_1_n_8 is a gated clock net sourced by a combinational pin DDR2/ddr_din_reg[64]_LDC_i_1/O, cell DDR2/ddr_din_reg[64]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#106 Warning
+Gated clock check  
+Net DDR2/ddr_din_reg[65]_LDC_i_1_n_8 is a gated clock net sourced by a combinational pin DDR2/ddr_din_reg[65]_LDC_i_1/O, cell DDR2/ddr_din_reg[65]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#107 Warning
+Gated clock check  
+Net DDR2/ddr_din_reg[66]_LDC_i_1_n_8 is a gated clock net sourced by a combinational pin DDR2/ddr_din_reg[66]_LDC_i_1/O, cell DDR2/ddr_din_reg[66]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#108 Warning
+Gated clock check  
+Net DDR2/ddr_din_reg[67]_LDC_i_1_n_8 is a gated clock net sourced by a combinational pin DDR2/ddr_din_reg[67]_LDC_i_1/O, cell DDR2/ddr_din_reg[67]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#109 Warning
+Gated clock check  
+Net DDR2/ddr_din_reg[68]_LDC_i_1_n_8 is a gated clock net sourced by a combinational pin DDR2/ddr_din_reg[68]_LDC_i_1/O, cell DDR2/ddr_din_reg[68]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#110 Warning
+Gated clock check  
+Net DDR2/ddr_din_reg[69]_LDC_i_1_n_8 is a gated clock net sourced by a combinational pin DDR2/ddr_din_reg[69]_LDC_i_1/O, cell DDR2/ddr_din_reg[69]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#111 Warning
+Gated clock check  
+Net DDR2/ddr_din_reg[6]_LDC_i_1_n_8 is a gated clock net sourced by a combinational pin DDR2/ddr_din_reg[6]_LDC_i_1/O, cell DDR2/ddr_din_reg[6]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#112 Warning
+Gated clock check  
+Net DDR2/ddr_din_reg[70]_LDC_i_1_n_8 is a gated clock net sourced by a combinational pin DDR2/ddr_din_reg[70]_LDC_i_1/O, cell DDR2/ddr_din_reg[70]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#113 Warning
+Gated clock check  
+Net DDR2/ddr_din_reg[71]_LDC_i_1_n_8 is a gated clock net sourced by a combinational pin DDR2/ddr_din_reg[71]_LDC_i_1/O, cell DDR2/ddr_din_reg[71]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#114 Warning
+Gated clock check  
+Net DDR2/ddr_din_reg[72]_LDC_i_1_n_8 is a gated clock net sourced by a combinational pin DDR2/ddr_din_reg[72]_LDC_i_1/O, cell DDR2/ddr_din_reg[72]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#115 Warning
+Gated clock check  
+Net DDR2/ddr_din_reg[73]_LDC_i_1_n_8 is a gated clock net sourced by a combinational pin DDR2/ddr_din_reg[73]_LDC_i_1/O, cell DDR2/ddr_din_reg[73]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#116 Warning
+Gated clock check  
+Net DDR2/ddr_din_reg[74]_LDC_i_1_n_8 is a gated clock net sourced by a combinational pin DDR2/ddr_din_reg[74]_LDC_i_1/O, cell DDR2/ddr_din_reg[74]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#117 Warning
+Gated clock check  
+Net DDR2/ddr_din_reg[75]_LDC_i_1_n_8 is a gated clock net sourced by a combinational pin DDR2/ddr_din_reg[75]_LDC_i_1/O, cell DDR2/ddr_din_reg[75]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#118 Warning
+Gated clock check  
+Net DDR2/ddr_din_reg[76]_LDC_i_1_n_8 is a gated clock net sourced by a combinational pin DDR2/ddr_din_reg[76]_LDC_i_1/O, cell DDR2/ddr_din_reg[76]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#119 Warning
+Gated clock check  
+Net DDR2/ddr_din_reg[77]_LDC_i_1_n_8 is a gated clock net sourced by a combinational pin DDR2/ddr_din_reg[77]_LDC_i_1/O, cell DDR2/ddr_din_reg[77]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#120 Warning
+Gated clock check  
+Net DDR2/ddr_din_reg[78]_LDC_i_1_n_8 is a gated clock net sourced by a combinational pin DDR2/ddr_din_reg[78]_LDC_i_1/O, cell DDR2/ddr_din_reg[78]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#121 Warning
+Gated clock check  
+Net DDR2/ddr_din_reg[79]_LDC_i_1_n_8 is a gated clock net sourced by a combinational pin DDR2/ddr_din_reg[79]_LDC_i_1/O, cell DDR2/ddr_din_reg[79]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#122 Warning
+Gated clock check  
+Net DDR2/ddr_din_reg[7]_LDC_i_1_n_8 is a gated clock net sourced by a combinational pin DDR2/ddr_din_reg[7]_LDC_i_1/O, cell DDR2/ddr_din_reg[7]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#123 Warning
+Gated clock check  
+Net DDR2/ddr_din_reg[80]_LDC_i_1_n_8 is a gated clock net sourced by a combinational pin DDR2/ddr_din_reg[80]_LDC_i_1/O, cell DDR2/ddr_din_reg[80]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#124 Warning
+Gated clock check  
+Net DDR2/ddr_din_reg[81]_LDC_i_1_n_8 is a gated clock net sourced by a combinational pin DDR2/ddr_din_reg[81]_LDC_i_1/O, cell DDR2/ddr_din_reg[81]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#125 Warning
+Gated clock check  
+Net DDR2/ddr_din_reg[82]_LDC_i_1_n_8 is a gated clock net sourced by a combinational pin DDR2/ddr_din_reg[82]_LDC_i_1/O, cell DDR2/ddr_din_reg[82]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#126 Warning
+Gated clock check  
+Net DDR2/ddr_din_reg[83]_LDC_i_1_n_8 is a gated clock net sourced by a combinational pin DDR2/ddr_din_reg[83]_LDC_i_1/O, cell DDR2/ddr_din_reg[83]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#127 Warning
+Gated clock check  
+Net DDR2/ddr_din_reg[84]_LDC_i_1_n_8 is a gated clock net sourced by a combinational pin DDR2/ddr_din_reg[84]_LDC_i_1/O, cell DDR2/ddr_din_reg[84]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#128 Warning
+Gated clock check  
+Net DDR2/ddr_din_reg[85]_LDC_i_1_n_8 is a gated clock net sourced by a combinational pin DDR2/ddr_din_reg[85]_LDC_i_1/O, cell DDR2/ddr_din_reg[85]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#129 Warning
+Gated clock check  
+Net DDR2/ddr_din_reg[86]_LDC_i_1_n_8 is a gated clock net sourced by a combinational pin DDR2/ddr_din_reg[86]_LDC_i_1/O, cell DDR2/ddr_din_reg[86]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#130 Warning
+Gated clock check  
+Net DDR2/ddr_din_reg[87]_LDC_i_1_n_8 is a gated clock net sourced by a combinational pin DDR2/ddr_din_reg[87]_LDC_i_1/O, cell DDR2/ddr_din_reg[87]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#131 Warning
+Gated clock check  
+Net DDR2/ddr_din_reg[88]_LDC_i_1_n_8 is a gated clock net sourced by a combinational pin DDR2/ddr_din_reg[88]_LDC_i_1/O, cell DDR2/ddr_din_reg[88]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#132 Warning
+Gated clock check  
+Net DDR2/ddr_din_reg[89]_LDC_i_1_n_8 is a gated clock net sourced by a combinational pin DDR2/ddr_din_reg[89]_LDC_i_1/O, cell DDR2/ddr_din_reg[89]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#133 Warning
+Gated clock check  
+Net DDR2/ddr_din_reg[8]_LDC_i_1_n_8 is a gated clock net sourced by a combinational pin DDR2/ddr_din_reg[8]_LDC_i_1/O, cell DDR2/ddr_din_reg[8]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#134 Warning
+Gated clock check  
+Net DDR2/ddr_din_reg[90]_LDC_i_1_n_8 is a gated clock net sourced by a combinational pin DDR2/ddr_din_reg[90]_LDC_i_1/O, cell DDR2/ddr_din_reg[90]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#135 Warning
+Gated clock check  
+Net DDR2/ddr_din_reg[91]_LDC_i_1_n_8 is a gated clock net sourced by a combinational pin DDR2/ddr_din_reg[91]_LDC_i_1/O, cell DDR2/ddr_din_reg[91]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#136 Warning
+Gated clock check  
+Net DDR2/ddr_din_reg[92]_LDC_i_1_n_8 is a gated clock net sourced by a combinational pin DDR2/ddr_din_reg[92]_LDC_i_1/O, cell DDR2/ddr_din_reg[92]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#137 Warning
+Gated clock check  
+Net DDR2/ddr_din_reg[93]_LDC_i_1_n_8 is a gated clock net sourced by a combinational pin DDR2/ddr_din_reg[93]_LDC_i_1/O, cell DDR2/ddr_din_reg[93]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#138 Warning
+Gated clock check  
+Net DDR2/ddr_din_reg[94]_LDC_i_1_n_8 is a gated clock net sourced by a combinational pin DDR2/ddr_din_reg[94]_LDC_i_1/O, cell DDR2/ddr_din_reg[94]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#139 Warning
+Gated clock check  
+Net DDR2/ddr_din_reg[95]_LDC_i_1_n_8 is a gated clock net sourced by a combinational pin DDR2/ddr_din_reg[95]_LDC_i_1/O, cell DDR2/ddr_din_reg[95]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#140 Warning
+Gated clock check  
+Net DDR2/ddr_din_reg[96]_LDC_i_1_n_8 is a gated clock net sourced by a combinational pin DDR2/ddr_din_reg[96]_LDC_i_1/O, cell DDR2/ddr_din_reg[96]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#141 Warning
+Gated clock check  
+Net DDR2/ddr_din_reg[97]_LDC_i_1_n_8 is a gated clock net sourced by a combinational pin DDR2/ddr_din_reg[97]_LDC_i_1/O, cell DDR2/ddr_din_reg[97]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#142 Warning
+Gated clock check  
+Net DDR2/ddr_din_reg[98]_LDC_i_1_n_8 is a gated clock net sourced by a combinational pin DDR2/ddr_din_reg[98]_LDC_i_1/O, cell DDR2/ddr_din_reg[98]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#143 Warning
+Gated clock check  
+Net DDR2/ddr_din_reg[99]_LDC_i_1_n_8 is a gated clock net sourced by a combinational pin DDR2/ddr_din_reg[99]_LDC_i_1/O, cell DDR2/ddr_din_reg[99]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#144 Warning
+Gated clock check  
+Net DDR2/ddr_din_reg[9]_LDC_i_1_n_8 is a gated clock net sourced by a combinational pin DDR2/ddr_din_reg[9]_LDC_i_1/O, cell DDR2/ddr_din_reg[9]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#145 Warning
+Gated clock check  
+Net DDR2/singal_controller/app_cmd_reg[0]_i_2_n_8 is a gated clock net sourced by a combinational pin DDR2/singal_controller/app_cmd_reg[0]_i_2/O, cell DDR2/singal_controller/app_cmd_reg[0]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PLCK-20#1 Warning
+Clock Placer Checks  
+Sub-optimal placement for a clock-capable IO pin and PLL pair. 
+Resolution: A dedicated routing path between the two can be used if: (a) The clock-capable IO (CCIO) is placed on a CCIO capable site (b) The PLL is placed in the same clock region as the CCIO pin. Both the above conditions must be met at the same time, else it may lead to longer and less predictable clock insertion delays.
+ This is normally an ERROR but the CLOCK_DEDICATED_ROUTE constraint is set to FALSE allowing your design to continue. The use of this override is highly discouraged as it may lead to very poor timing results. It is recommended that this error condition be corrected in the design.
+
+	clk_IBUF_inst (IBUF.O) is locked to E3
+	DDR2/singal_controller/ddr2_ram/u_sdram_mig/u_ddr2_infrastructure/plle2_i (PLLE2_ADV.CLKIN1) is locked to PLLE2_ADV_X1Y1
+
+Related violations: <none>
+
+PLCK-23#1 Warning
+Clock Placer Checks  
+Sub-optimal placement for a clock-capable IO pin and MMCM pair. 
+Resolution: A dedicated routing path between the two can be used if: (a) The clock-capable IO (CCIO) is placed on a CCIO capable site (b) The MMCM is placed in the same clock region as the CCIO pin. If the IOB is driving multiple MMCMs, all MMCMs must be placed in the same clock region, one clock region above or one clock region below the IOB. Both the above conditions must be met at the same time, else it may lead to longer and less predictable clock insertion delays.
+ This is normally an ERROR but the CLOCK_DEDICATED_ROUTE constraint is set to FALSE allowing your design to continue. The use of this override is highly discouraged as it may lead to very poor timing results. It is recommended that this error condition be corrected in the design.
+
+	clk_IBUF_inst (IBUF.O) is locked to E3
+	wiz25mhz/inst/mmcm_adv_inst (MMCME2_ADV.CLKIN1) is provisionally placed by clockplacer on MMCME2_ADV_X0Y1
+	wiz200mhz/inst/mmcm_adv_inst (MMCME2_ADV.CLKIN1) is provisionally placed by clockplacer on MMCME2_ADV_X0Y3
+
+Related violations: <none>
+
+REQP-1709#1 Warning
+Clock output buffering  
+PLLE2_ADV connectivity violation. The signal DDR2/singal_controller/ddr2_ram/u_sdram_mig/u_ddr2_infrastructure/pll_clk3_out on the DDR2/singal_controller/ddr2_ram/u_sdram_mig/u_ddr2_infrastructure/plle2_i/CLKOUT3 pin of DDR2/singal_controller/ddr2_ram/u_sdram_mig/u_ddr2_infrastructure/plle2_i does not drive the same kind of BUFFER load as the other CLKOUT pins. Routing from the different buffer types will not be phase aligned.
+Related violations: <none>
+
+RPBF-3#1 Warning
+IO port buffering is incomplete  
+Device port SD_DAT[0] expects both input and output buffering but the buffers are incomplete.
+Related violations: <none>
+
+RPBF-3#2 Warning
+IO port buffering is incomplete  
+Device port SD_DAT[1] expects both input and output buffering but the buffers are incomplete.
+Related violations: <none>
+
+RPBF-3#3 Warning
+IO port buffering is incomplete  
+Device port SD_DAT[2] expects both input and output buffering but the buffers are incomplete.
+Related violations: <none>
+
+RPBF-3#4 Warning
+IO port buffering is incomplete  
+Device port SD_DAT[3] expects both input and output buffering but the buffers are incomplete.
+Related violations: <none>
+
+

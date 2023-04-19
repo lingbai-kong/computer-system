@@ -1,0 +1,139 @@
+# do {cpu_test_compile.do}
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/work".
+# 
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim".
+# 
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim/xpm".
+# 
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim/dist_mem_gen_v8_0_13".
+# 
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim/xil_defaultlib".
+# 
+# Model Technology ModelSim PE vmap 10.4c Lib Mapping Utility 2015.07 Jul 20 2015
+# vmap xpm modelsim_lib/msim/xpm 
+# Modifying modelsim.ini
+# Model Technology ModelSim PE vmap 10.4c Lib Mapping Utility 2015.07 Jul 20 2015
+# vmap dist_mem_gen_v8_0_13 modelsim_lib/msim/dist_mem_gen_v8_0_13 
+# Modifying modelsim.ini
+# Model Technology ModelSim PE vmap 10.4c Lib Mapping Utility 2015.07 Jul 20 2015
+# vmap xil_defaultlib modelsim_lib/msim/xil_defaultlib 
+# Modifying modelsim.ini
+# Model Technology ModelSim PE vlog 10.4c Compiler 2015.07 Jul 20 2015
+# Start time: 16:28:40 on May 24,2021
+# vlog -incr -sv -work xpm M:/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv 
+# -- Skipping module xpm_cdc_single
+# -- Skipping module xpm_cdc_gray
+# -- Skipping module xpm_cdc_handshake
+# -- Skipping module xpm_cdc_pulse
+# -- Skipping module xpm_cdc_array_single
+# -- Skipping module xpm_cdc_sync_rst
+# -- Skipping module xpm_cdc_async_rst
+# -- Skipping module xpm_cdc_low_latency_handshake
+# 
+# Top level modules:
+# 	xpm_cdc_gray
+# 	xpm_cdc_handshake
+# 	xpm_cdc_pulse
+# 	xpm_cdc_array_single
+# 	xpm_cdc_sync_rst
+# 	xpm_cdc_async_rst
+# 	xpm_cdc_low_latency_handshake
+# End time: 16:28:40 on May 24,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE vcom 10.4c Compiler 2015.07 Jul 20 2015
+# Start time: 16:28:40 on May 24,2021
+# vcom -93 -work xpm M:/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_VCOMP.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package VCOMPONENTS
+# End time: 16:28:40 on May 24,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE vlog 10.4c Compiler 2015.07 Jul 20 2015
+# Start time: 16:28:41 on May 24,2021
+# vlog -incr -work dist_mem_gen_v8_0_13 ../../../../Wishbone.ip_user_files/ipstatic/simulation/dist_mem_gen_v8_0.v 
+# -- Skipping module dist_mem_gen_v8_0_13
+# 
+# Top level modules:
+# 	dist_mem_gen_v8_0_13
+# End time: 16:28:41 on May 24,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE vlog 10.4c Compiler 2015.07 Jul 20 2015
+# Start time: 16:28:41 on May 24,2021
+# vlog -incr -work xil_defaultlib ../../../../Wishbone.gen/sources_1/ip/dist_mem_gen_0/sim/dist_mem_gen_0.v ../../../../Wishbone.srcs/sources_1/new/cpu/Asynchronous_D_FF.v ../../../../Wishbone.srcs/sources_1/new/cpu/II.v ../../../../Wishbone.srcs/sources_1/new/cpu/LLbit_reg.v ../../../../Wishbone.srcs/sources_1/new/cpu/PipeDEreg.v ../../../../Wishbone.srcs/sources_1/new/cpu/PipeEMreg.v ../../../../Wishbone.srcs/sources_1/new/cpu/PipeEXE.v ../../../../Wishbone.srcs/sources_1/new/cpu/PipeID.v ../../../../Wishbone.srcs/sources_1/new/cpu/PipeIF.v ../../../../Wishbone.srcs/sources_1/new/cpu/PipeIR.v ../../../../Wishbone.srcs/sources_1/new/cpu/PipeMEM.v ../../../../Wishbone.srcs/sources_1/new/cpu/PipeMWreg.v ../../../../Wishbone.srcs/sources_1/new/cpu/PipeWB.v ../../../../Wishbone.srcs/sources_1/new/cpu/alu.v ../../../../Wishbone.srcs/sources_1/new/cpu/clo.v ../../../../Wishbone.srcs/sources_1/new/cpu/clz.v ../../../../Wishbone.srcs/sources_1/new/cpu/complement.v ../../../../Wishbone.srcs/sources_1/new/cpu/cp0.v ../../../../Wishbone.srcs/sources_1/new/cpu/cpmem.v ../../../../Wishbone.srcs/sources_1/new/cpu/cpu.v ../../../../Wishbone.srcs/sources_1/new/cpu/cpu_top.v ../../../../Wishbone.srcs/sources_1/new/cpu/cu.v ../../../../Wishbone.srcs/sources_1/new/cpu/decoder.v ../../../../Wishbone.srcs/sources_1/new/cpu/direct.v ../../../../Wishbone.srcs/sources_1/new/cpu/div.v ../../../../Wishbone.srcs/sources_1/new/divider.v ../../../../Wishbone.srcs/sources_1/new/cpu/extend.v ../../../../Wishbone.srcs/sources_1/new/cpu/hi_lo_function.v ../../../../Wishbone.srcs/sources_1/new/cpu/mult.v ../../../../Wishbone.srcs/sources_1/new/cpu/mux.v ../../../../Wishbone.srcs/sources_1/new/cpu/npc.v ../../../../Wishbone.srcs/sources_1/new/cpu/pcreg.v ../../../../Wishbone.srcs/sources_1/new/cpu/predictor.v ../../../../Wishbone.srcs/sources_1/new/cpu/regfile.v ../../../../Wishbone.srcs/sim_1/new/cpu_test.v 
+# -- Skipping module dist_mem_gen_0
+# -- Skipping module Ansynchronous
+# -- Skipping module ii
+# -- Skipping module LLbit_reg
+# -- Skipping module PipeDEreg
+# -- Skipping module PipeEMreg
+# -- Skipping module PipeEXE
+# -- Skipping module PipeID
+# -- Skipping module PipeIF
+# -- Skipping module PipeIR
+# -- Skipping module PipeMEM
+# -- Skipping module PipeMWreg
+# -- Skipping module PipeWB
+# -- Skipping module alu
+# -- Skipping module ADDU
+# -- Skipping module ADD
+# -- Skipping module SUBU
+# -- Skipping module SUB
+# -- Skipping module AND
+# -- Skipping module OR
+# -- Skipping module XOR
+# -- Skipping module NOR
+# -- Skipping module LUI
+# -- Skipping module SLT
+# -- Skipping module SLTU
+# -- Skipping module SRA
+# -- Skipping module SLLSLR
+# -- Skipping module SRL
+# -- Skipping module alu_selector
+# -- Skipping module clo
+# -- Skipping module clz
+# -- Skipping module complement32
+# -- Skipping module complement64
+# -- Skipping module cp0
+# -- Skipping module cpmem
+# -- Skipping module cpu
+# -- Skipping module cpu_top
+# -- Skipping module cu
+# -- Skipping module decoder
+# -- Skipping module direct
+# -- Skipping module div
+# -- Skipping module divu
+# -- Skipping module time_divider
+# -- Skipping module extend1
+# -- Skipping module extend5
+# -- Skipping module extend8
+# -- Skipping module extend16
+# -- Skipping module extend18
+# -- Skipping module hi_lo_function
+# -- Skipping module mult
+# -- Skipping module multu
+# -- Skipping module mux_pc
+# -- Skipping module mux_rf
+# -- Skipping module mux_alu
+# -- Skipping module mux_hi
+# -- Skipping module mux_lo
+# -- Skipping module mux2_32
+# -- Skipping module npc
+# -- Skipping module pcreg
+# -- Skipping module predictor
+# -- Skipping module regfile
+# -- Skipping module cpu_test
+# 
+# Top level modules:
+# 	cpu_test
+# End time: 16:28:41 on May 24,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim PE vlog 10.4c Compiler 2015.07 Jul 20 2015
+# Start time: 16:28:42 on May 24,2021
+# vlog -work xil_defaultlib glbl.v 
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# End time: 16:28:42 on May 24,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0

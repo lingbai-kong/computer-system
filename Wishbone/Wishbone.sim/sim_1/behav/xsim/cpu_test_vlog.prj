@@ -1,0 +1,43 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../Wishbone.gen/sources_1/ip/clk_wiz_25MHZ" --include "../../../../Wishbone.gen/sources_1/ip/clk_wiz_200MHZ" --include "../../../../Wishbone.gen/sources_1/ip/clk_wiz_5MHZ" \
+"../../../../Wishbone.gen/sources_1/ip/clk_wiz_5MHZ/clk_wiz_5MHZ_clk_wiz.v" \
+"../../../../Wishbone.gen/sources_1/ip/clk_wiz_5MHZ/clk_wiz_5MHZ.v" \
+"../../../../Wishbone.srcs/sources_1/new/cpu/Asynchronous_D_FF.v" \
+"../../../../Wishbone.srcs/sources_1/new/cpu/II.v" \
+"../../../../Wishbone.srcs/sources_1/new/cpu/LLbit_reg.v" \
+"../../../../Wishbone.srcs/sources_1/new/cpu/PipeDEreg.v" \
+"../../../../Wishbone.srcs/sources_1/new/cpu/PipeEMreg.v" \
+"../../../../Wishbone.srcs/sources_1/new/cpu/PipeEXE.v" \
+"../../../../Wishbone.srcs/sources_1/new/cpu/PipeID.v" \
+"../../../../Wishbone.srcs/sources_1/new/cpu/PipeIF.v" \
+"../../../../Wishbone.srcs/sources_1/new/cpu/PipeIR.v" \
+"../../../../Wishbone.srcs/sources_1/new/cpu/PipeMEM.v" \
+"../../../../Wishbone.srcs/sources_1/new/cpu/PipeMWreg.v" \
+"../../../../Wishbone.srcs/sources_1/new/cpu/PipeWB.v" \
+"../../../../Wishbone.srcs/sources_1/new/cpu/alu.v" \
+"../../../../Wishbone.srcs/sources_1/new/cpu/clo.v" \
+"../../../../Wishbone.srcs/sources_1/new/cpu/clz.v" \
+"../../../../Wishbone.srcs/sources_1/new/cpu/complement.v" \
+"../../../../Wishbone.srcs/sources_1/new/cpu/cp0.v" \
+"../../../../Wishbone.srcs/sources_1/new/cpu/cpmem.v" \
+"../../../../Wishbone.srcs/sources_1/new/cpu/cpu.v" \
+"../../../../Wishbone.srcs/sources_1/new/cpu/cpu_top.v" \
+"../../../../Wishbone.srcs/sources_1/new/cpu/cu.v" \
+"../../../../Wishbone.srcs/sources_1/new/cpu/decoder.v" \
+"../../../../Wishbone.srcs/sources_1/new/cpu/direct.v" \
+"../../../../Wishbone.srcs/sources_1/new/cpu/div.v" \
+"../../../../Wishbone.srcs/sources_1/new/cpu/extend.v" \
+"../../../../Wishbone.srcs/sources_1/new/cpu/hi_lo_function.v" \
+"../../../../Wishbone.srcs/sources_1/new/cpu/mult.v" \
+"../../../../Wishbone.srcs/sources_1/new/cpu/mux.v" \
+"../../../../Wishbone.srcs/sources_1/new/cpu/npc.v" \
+"../../../../Wishbone.srcs/sources_1/new/cpu/pcreg.v" \
+"../../../../Wishbone.srcs/sources_1/new/cpu/predictor.v" \
+"../../../../Wishbone.srcs/sources_1/new/cpu/regfile.v" \
+"../../../../Wishbone.srcs/sim_1/new/cpu_test.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

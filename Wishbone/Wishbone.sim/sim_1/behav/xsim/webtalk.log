@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Webtalk v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sat May 15 00:47:24 2021
+# Process ID: 20296
+# Current directory: G:/document/semester6/ComputerSystemExperiment/Wishbone/Wishbone.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source G:/document/semester6/ComputerSystemExperiment/Wishbone/Wishbone.sim/sim_1/behav/xsim/xsim.dir/cpu_test_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: G:/document/semester6/ComputerSystemExperiment/Wishbone/Wishbone.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: G:/document/semester6/ComputerSystemExperiment/Wishbone/Wishbone.sim/sim_1/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source G:/document/semester6/ComputerSystemExperiment/Wishbone/Wishbone.sim/sim_1/behav/xsim/xsim.dir/cpu_test_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'G:/document/semester6/ComputerSystemExperiment/Wishbone/Wishbone.sim/sim_1/behav/xsim/xsim.dir/cpu_test_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Sat May 15 00:47:31 2021. For additional details about this file, please refer to the WebTalk help file at M:/Xilinx/Vivado/2020.2/doc/webtalk_introduction.html.
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 116.488 ; gain = 23.660
+INFO: [Common 17-206] Exiting Webtalk at Sat May 15 00:47:31 2021...

@@ -1,0 +1,88 @@
+# do {cpu_test_simulate.do}
+# vsim -voptargs=""+acc"" -L xil_defaultlib -L xpm -L dist_mem_gen_v8_0_13 -L unisims_ver -L unimacro_ver -L secureip -lib xil_defaultlib xil_defaultlib.cpu_test xil_defaultlib.glbl 
+# Start time: 16:29:01 on May 24,2021
+# Loading xil_defaultlib.cpu_test
+# Loading xil_defaultlib.cpu_top
+# Loading xil_defaultlib.time_divider
+# Loading xil_defaultlib.cpu
+# Loading xil_defaultlib.pcreg
+# Loading xil_defaultlib.Ansynchronous
+# Loading xil_defaultlib.PipeIF
+# Loading xil_defaultlib.npc
+# Loading xil_defaultlib.mux_pc
+# Loading xil_defaultlib.PipeIR
+# Loading xil_defaultlib.PipeID
+# Loading xil_defaultlib.decoder
+# Loading xil_defaultlib.cu
+# Loading xil_defaultlib.predictor
+# Loading xil_defaultlib.direct
+# Loading xil_defaultlib.regfile
+# Loading xil_defaultlib.extend5
+# Loading xil_defaultlib.extend16
+# Loading xil_defaultlib.extend18
+# Loading xil_defaultlib.ADD
+# Loading xil_defaultlib.ii
+# Loading xil_defaultlib.cp0
+# Loading xil_defaultlib.LLbit_reg
+# Loading xil_defaultlib.PipeDEreg
+# Loading xil_defaultlib.PipeEXE
+# Loading xil_defaultlib.mux_alu
+# Loading xil_defaultlib.alu
+# Loading xil_defaultlib.ADDU
+# Loading xil_defaultlib.SUBU
+# Loading xil_defaultlib.SUB
+# Loading xil_defaultlib.AND
+# Loading xil_defaultlib.OR
+# Loading xil_defaultlib.XOR
+# Loading xil_defaultlib.NOR
+# Loading xil_defaultlib.LUI
+# Loading xil_defaultlib.SLT
+# Loading xil_defaultlib.SLTU
+# Loading xil_defaultlib.SRA
+# Loading xil_defaultlib.SLLSLR
+# Loading xil_defaultlib.SRL
+# Loading xil_defaultlib.alu_selector
+# Loading xil_defaultlib.mult
+# Loading xil_defaultlib.complement32
+# Loading xil_defaultlib.multu
+# Loading xil_defaultlib.complement64
+# Loading xil_defaultlib.div
+# Loading xil_defaultlib.divu
+# Loading xil_defaultlib.clz
+# Loading xil_defaultlib.clo
+# Loading xil_defaultlib.mux_rf
+# Loading xil_defaultlib.mux_hi
+# Loading xil_defaultlib.mux_lo
+# Loading xil_defaultlib.hi_lo_function
+# Loading xil_defaultlib.extend1
+# Loading xil_defaultlib.mux2_32
+# Loading xil_defaultlib.PipeEMreg
+# Loading xil_defaultlib.PipeMEM
+# Loading xil_defaultlib.cpmem
+# Loading xil_defaultlib.extend8
+# Loading xil_defaultlib.PipeMWreg
+# Loading xil_defaultlib.PipeWB
+# Loading xil_defaultlib.dist_mem_gen_0
+# Loading dist_mem_gen_v8_0_13.dist_mem_gen_v8_0_13
+# Loading xil_defaultlib.glbl
+# ** Warning: (vsim-3017) ../../../../Wishbone.srcs/sim_1/new/cpu_test.v(31): [TFMPC] - Too few port connections. Expected 27, found 25.
+#    Time: 0 ps  Iteration: 0  Instance: /cpu_test/CPU File: ../../../../Wishbone.srcs/sources_1/new/cpu/cpu_top.v
+# ** Warning: (vsim-3722) ../../../../Wishbone.srcs/sim_1/new/cpu_test.v(31): [TFMPC] - Missing connection for port 'stall'.
+# ** Warning: (vsim-3722) ../../../../Wishbone.srcs/sim_1/new/cpu_test.v(31): [TFMPC] - Missing connection for port 'st'.
+# ** Warning: (vsim-3017) ../../../../Wishbone.srcs/sources_1/new/cpu/cpu_top.v(50): [TFMPC] - Too few port connections. Expected 17, found 15.
+#    Time: 0 ps  Iteration: 0  Instance: /cpu_test/CPU/CPU File: ../../../../Wishbone.srcs/sources_1/new/cpu/cpu.v
+# ** Warning: (vsim-3722) ../../../../Wishbone.srcs/sources_1/new/cpu/cpu_top.v(50): [TFMPC] - Missing connection for port 'count'.
+# ** Warning: (vsim-3722) ../../../../Wishbone.srcs/sources_1/new/cpu/cpu_top.v(50): [TFMPC] - Missing connection for port 'compare'.
+# 1
+# 1
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# ** Warning: (vsim-PLI-3408) Too few data words read on line 2 of file "dist_mem_gen_0.mif". Expected 1024, found 1.    : ../../../../Wishbone.ip_user_files/ipstatic/simulation/dist_mem_gen_v8_0.v(234)
+#    Time: 0 ps  Iteration: 0  Instance: /cpu_test/imem/inst
+run -all
+# Break key hit
+# Break in Module cpu_test at ../../../../Wishbone.srcs/sim_1/new/cpu_test.v line 67
+# End time: 16:30:31 on May 24,2021, Elapsed time: 0:01:30
+# Errors: 0, Warnings: 7
